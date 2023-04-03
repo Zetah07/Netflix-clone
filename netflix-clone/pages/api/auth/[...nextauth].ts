@@ -9,7 +9,7 @@ import prismadb from '@/libs/prismadb';
 export default NextAuth({
   providers: [
     GithubProvider({
-      clientId: process.env.GITHUB_ID ||'',
+      clientId: process.env.GITHUB_ID || '',
       clientSecret: process.env.GITHUB_SECRET || '',
     }),
     GoogleProvider({
